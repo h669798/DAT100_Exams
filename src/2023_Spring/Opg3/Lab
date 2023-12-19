@@ -1,0 +1,15 @@
+// 3e
+public class Lab extends Rom {
+  private int antall;
+
+  public Lab(int nr, char blokk, int antall) {
+    super(nr, blokk);
+    this.antall = antall;
+  }
+
+// 3f
+  @Override
+  public String toString() {
+    String tekst =  "Lab " + super.toString() + "[" + antall + "]\n";
+    return tekst;
+  }

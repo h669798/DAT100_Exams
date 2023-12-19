@@ -1,0 +1,35 @@
+// 3a
+public abstract class Rom {
+  private int nr;
+  private char blokk;
+
+// 3b
+  public Rom(int nr, char blokk) {
+    this.nr = nr;
+    this.blokk = blokk;
+  }
+
+// 3c
+  public void setNr(int nyNr) {
+    nr = nyNr;
+  }
+
+  public int getNr() {
+    return nr;
+  }
+
+  public void setBlokk(char nyBlokk) {
+    blokk = nyBlokk;
+  }
+
+  public char getBlokk() {
+    return blokk;
+  }
+
+// 3d
+  @Override
+  public String toString() {
+    String tekst = Character.toString(blokk) + nr;
+    return tekst;
+  }
+}

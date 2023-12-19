@@ -1,0 +1,16 @@
+// 3g
+public class Kontor extends Rom {
+  private String person;
+
+  public Kontor(int nr, char blokk, String person) {
+    super(nr, blokk);
+    this.person = person;
+  }
+
+// 3h
+  @Override
+  public String toString() {
+    String tekst = "Kontor " + super.toString() + "[" + person + "]\n";
+    return tekst;
+  }
+}
